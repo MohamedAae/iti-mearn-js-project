@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheets, small chunks -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/globals.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/features.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Title -->
+    <title>About US &mdash; JS Final Project</title>
+</head>
+
+<body class="flex-column f-center">
+    <!-- Navbar -->
+    <header class="responsive-menu">
+        <div class="mobile-nav flex-row f-jusitfy-sb f-align-c">
+            <a id="toggle-menu" class="flex-column f-jusitfy-c f-align-c">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="shopping-bag">
+                <img src="./imgs/svg/shopping-bag.svg">
+            </div>
+        </div>
+        <nav class="mobile-menu d-none">
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="active">
+                    <a href="javascript:void(0)">About</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="menu flex-row f-jusitfy-sb f-align-c">
+        <ul>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="active">
+                <a href="javascript:void(0)">About</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+        <div class="shopping-bag">
+            <img src="./imgs/svg/shopping-bag.svg">
+        </div>
+    </nav>
+
+    <!-- About Us -->
+    <main class="flex-row f-jusitfy-c">
+        <section class="flex-column f-center">
+            <div class="section-heading">
+                <span class="subtitle">Our Values Here At</span>
+                <h1 class="section">myEcommerce</h1>
+            </div>
+            <div class="features-list flex-row f-wrap">
+                <div class="quality inline-flex-column f-align-c">
+                    <div class="icon circle flex-row">
+                        <img class="hover h-scale" src="./imgs/svg/quality.svg" />
+                    </div>
+                    <h3>Quality</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="sustainable inline-flex-column f-align-c">
+                    <div class="icon circle flex-row">
+                        <img class="hover h-scale" src="./imgs/svg/sustainable.svg" />
+                    </div>
+                    <h3>Sustainable</h3>
+                    <p> Neque itaque fugit labore, aspernatur doloremque accusamus beatae natus, amet optio molestias tempora.</p>
+                </div>
+                <div class="fast-delivery inline-flex-column f-align-c">
+                    <div class="icon circle flex-row">
+                        <img class="hover h-scale" src="./imgs/svg/fast-delivery.svg" />
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p> Doloremque earum ab dolor esse consequuntur quam neque voluptatum.</p>
+                </div>
+                <div class="satisfaction inline-flex-column f-align-c">
+                    <div class="icon circle flex-row">
+                        <img class="hover h-scale" src="./imgs/svg/satisfaction.svg" />
+                    </div>
+                    <h3>Satisfaction</h3>
+                    <p>Aspernatur doloremque accusamus beatae natus.<p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="nav">
+        <header class="top flex-row f-jusitfy-sb">
+            <div class="width-50">
+                <h1 class="website-logo">
+                    myEcommerce
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et ducimus vero assumenda! Laboriosam, ut ipsum! Cum, amet obcaecati. Quos necessitatibus laudantium natus modi ea maiores, iste eius. Exercitationem, odit quasi!
+                </p>
+            </div>
+            <ul class="width-50">
+                <h3>Sitemap</h3>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <footer class="bottom flex-row f-jusitfy-sb">
+            <ul class="flex-row">
+                <li><i class="fa-brands fa-facebook-square"></i></li>
+                <li><i class="fa-brands fa-twitter-square"></i></li>
+                <li><i class="fa-brands fa-instagram-square"></i></li>
+                <li><i class="fa-brands fa-pinterest-square"></i></li>
+            </ul>
+            <small class="copyrights">
+                All rights reserved &copy; Mohamed Aae
+            </small>
+        </footer>
+    </footer>
+
+    <!-- Back To Top -->
+    <button id="scroll-to-top" onclick="scrollToTop(event)">Top</button>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

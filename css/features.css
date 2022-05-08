@@ -1,0 +1,36 @@
+.features-list {
+    justify-content: center;
+    align-items    : flex-start;
+}
+
+.features-list .icon {
+    user-select    : none;
+    justify-content: center;
+    align-items    : flex-end;
+    width          : 150px;
+    height         : 150px;
+    overflow       : hidden;
+}
+
+.quality .icon {
+    background-color: #edc4b3;
+}
+
+.sustainable .icon {
+    background-color: #5fbc90;
+}
+
+.fast-delivery .icon {
+    background-color: #8aa3ba;
+}
+
+.satisfaction .icon {
+    background-color: #00a8e8;
+}
+
+.features-list p {
+    font-size  : 13px;
+    line-height: 16px;
+    width      : 201px;
+    text-align : center;
+}

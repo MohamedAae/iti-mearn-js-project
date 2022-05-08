@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
+:root {
+    --font        : 'Montserrat', sans-serif;
+    --white       : #fff;
+    --grey        : #f7f3ee;
+    --navy-blue   : #001f3f;
+    --blue        : #0074D9;
+    --aqua        : #7fdbff;
+    --orange      : #ee6c4d;
+    --black       : #293241;
+    --border-color: #148cd3;
+    --bold        : 700;
+    --meduim      : 500;
+}
+
+* {
+    font-family            : var(--font);
+    text-rendering         : optimizeLegibility;
+    -webkit-font-smoothing : antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: var(--grey);
+}
+
+section {
+    max-width: 960px;
+    padding  : 100px 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height         : 101%;
+    min-width      : 101%;
+    object-fit     : cover;
+    object-position: center left;
+}
+
+button {
+    border : none;
+    outline: none;
+    cursor : pointer;
+}
+
+.d-none {
+    display: none;
+}
+
+.width-50 {
+    width: 50%;
+}
+
+.flex-column {
+    display       : flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display       : flex;
+    flex-direction: row;
+}
+
+.f-jusitfy-sb {
+    justify-content: space-between;
+}
+
+.f-jusitfy-c {
+    justify-content: center;
+}
+
+.f-align-c {
+    align-items: center;
+}
+
+.f-wrap {
+    flex-wrap: wrap;
+}
+
+.inline-flex-column {
+    display       : inline-flex;
+    flex-direction: column;
+}
+
+.section-heading {
+    text-align   : center;
+    margin-bottom: 75px;
+}
+
+.section-heading h1,
+h1.section {
+    margin        : 0;
+    color         : var(--navy-blue);
+    text-transform: capitalize;
+    text-align    : center;
+}
+
+.section-heading .subtitle {
+    font-weight   : var(--bold);
+    margin        : 0;
+    text-transform: capitalize;
+    color         : var(--blue);
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.hover.h-scale {
+    transform         : scale(1);
+    -webkit-transition: -webkit-transform 0.2s ease-in-out;
+    -moz-transition   : -moz-transform 0.2s ease-in-out;
+    -o-transition     : -o-transform 0.2s ease-in-out;
+    -ms-transition    : -ms-transform 0.2s ease-in-out;
+    transition        : transform 0.2s ease-in-out;
+}

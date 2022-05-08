@@ -1,0 +1,124 @@
+.responsive-menu {
+    display: none;
+    height : 45px;
+}
+
+.mobile-nav {
+    height          : 100%;
+    background-color: var(--navy-blue);
+}
+
+#toggle-menu {
+    row-gap: 4px;
+}
+
+#toggle-menu span {
+    display         : block;
+    width           : 30px;
+    height          : 3px;
+    background-color: var(--white);
+    border-radius   : 2px;
+}
+
+nav.menu {
+    z-index         : 8;
+    position        : fixed;
+    width           : 100%;
+    min-height      : 45px;
+    padding         : 0 5%;
+    font-size       : 14px;
+    background-color: var(--navy-blue);
+}
+
+nav.menu ul {
+    margin    : 0;
+    list-style: none;
+}
+
+nav.menu li {
+    margin     : 0;
+    display    : inline-block;
+    line-height: 45px;
+
+}
+
+header a,
+nav.menu a 	{
+    color      : var(--white);
+    display    : block;
+    padding    : 0px 24px;
+    font-weight: var(--bold);
+}
+
+header a:hover,
+nav.menu a:hover {
+    color             : var(--aqua);
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition   : color 0.2s ease-in-out;
+    -o-transition     : color 0.2s ease-in-out;
+    -ms-transition    : color 0.2s ease-in-out;
+    transition        : color 0.2s ease-in-out;
+}
+
+.active a {
+    color: var(--orange) !important;
+
+}
+
+.shopping-bag {
+    position   : relative;
+    cursor     : pointer;
+    line-height: 0;
+    font-size  : 0;
+    padding    : 0;
+}
+
+#bag-items {
+    display         : none;
+    position        : absolute;
+    top             : -50%;
+    right           : -50%;
+    width           : 20px;
+    height          : 20px;
+    border-radius   : 50%;
+    font-size       : 13px;
+    font-weight     : var(--bold);
+    color           : var(--white);
+    background-color: red;
+}
+
+#bag-items.show {
+    display : flex;
+}
+
+.mobile-menu ul {
+    margin: 0;
+}
+
+.mobile-menu li {
+    margin   : 0;
+    font-size: 18px;
+    color    : var(--white);
+}
+
+.mobile-menu li a {
+    background-color: var(--blue);
+}
+
+@media (max-width: 575.98px) {
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        text-align: center;
+    }
+
+    .mobile-menu  li a {
+        padding: 25px;
+    }
+
+    .responsive-menu {
+        display: block;
+    }
+}
